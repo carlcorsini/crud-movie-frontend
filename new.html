@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Movie</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <link rel="icon" href="movie-reel.png">
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Movie Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="new.html">New</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <body>
+    <div class="row container-fluid">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <h1>Let's add a gosh dang movie!</h1>
+        <div id="form-container">
+          <form class="form-group" action="index.html" method="post">
+            title <br>
+            <textarea id="title-form" name="title" rows="2" cols="40"></textarea><br>
+            director <br>
+            <textarea id="director-form" name="director" rows="2" cols="40"></textarea><br>
+            year <br>
+            <textarea id="year-form" name="year" rows="2" cols="40"></textarea><br>
+            rating <br>
+            <textarea id="rating-form" name="rating" rows="2" cols="40"></textarea><br>
+            image url: <br>
+            <textarea id="image-url-form" name="imageUrl" rows="2" cols="40"></textarea><br>
+            <button id="submit-button" type="button" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="new.js" charset="utf-8"></script>
+  <!-- <script src="show.js" charset="utf-8"></script> -->
+</html>
